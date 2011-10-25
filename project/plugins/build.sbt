@@ -12,10 +12,6 @@ libraryDependencies <<= (libraryDependencies, sbtVersion) { (deps, version) =>
   deps :+ ("com.typesafe.sbteclipse" %% "sbteclipse" % "1.3-RC2" extra("sbtversion" -> version))
 }
 
-resolvers += "sonatype.repo" at "https://oss.sonatype.org/content/groups/public"
-
-libraryDependencies <+= sbtVersion(v => "eu.getintheloop" %% "sbt-cloudbees-plugin" % ("0.3.1_"+v))
-
 
 
 
