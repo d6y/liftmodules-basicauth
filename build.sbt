@@ -28,4 +28,8 @@ libraryDependencies ++= Seq(
   "ch.qos.logback" % "logback-classic" % "0.9.26" % "compile->default" // Logging
 )
 
+// To publish to the Cloudbees repos:
 
+publishTo := Some("liftmodules repository" at "https://repository-liftmodules.forge.cloudbees.com/release/")
+ 
+credentials += Credentials( file("cloudbees.credentials") )
