@@ -29,4 +29,4 @@ libraryDependencies ++= Seq(
 
 publishTo := Some("liftmodules repository" at "https://repository-liftmodules.forge.cloudbees.com/release/")
  
-credentials += Credentials( file("cloudbees.credentials") )
+credentials += Credentials( file("/private/liftmodules/cloudbees.credentials") )
