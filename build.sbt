@@ -4,11 +4,8 @@ version := "2.4-M4-1.0"
 
 organization := "net.liftmodules"
 
- 
 scalaVersion := "2.9.1"
  
-seq(com.github.siasia.WebPlugin.webSettings :_*)
-
 // If using JRebel
 jettyScanDirs := Nil
 
