@@ -1,6 +1,6 @@
 # Basic Auth Lift Module
 
-Provides Basic Auth into a [Lift](http://www.liftweb.net) application.
+Uses Basic Auth to control access to the whole of a [Lift](http://www.liftweb.net) application based on the run mode.  Useful, for example, when you want to restrict access to a site before launch or restrict access to a staging site.
 
 ## Using this module
 
@@ -24,7 +24,7 @@ Provides Basic Auth into a [Lift](http://www.liftweb.net) application.
           
           BasicAuth.auth
           
-4. Finally, add the following properties to the properties files you wish to have basic authentication.   For example, add the following to `src/main/resources/production.default.props` 
+4. Finally, add the following properties to the properties files of the run mode you wish to be protected.   For example, add the following to `src/main/resources/production.default.props` 
 If you want all run modes to have authentication put them in default.props 
 
          
